@@ -1,3 +1,134 @@
+/*---------------------GLOBAL STYLING START-------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  font-family: "Raleway", sans-serif;
+  line-height: 1.6;
+  color: #242424;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #242424;
+}
+
+h1,
+h2 {
+  line-height: 1.2;
+  margin: 0.625rem 0;
+}
+
+p {
+  margin: 0.625rem 0;
+}
+
+img {
+  width: 100%;
+}
+
+/*CLASS STYLING START*/
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  overflow: auto;
+  padding: 0 2.5rem;
+}
+
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 0.625rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  padding: 1.25rem;
+  margin: 0.625rem;
+  color: #242424;
+}
+
+/*---------------------GLOBAL STYLING END-------------------------*/
+/*----------HEADER| NAVBAR STYLING START----------*/
+.navbar {
+  background-color: #dc143c;
+  color: #fff;
+  height: 4.375rem;
+}
+.navbar.navbar .flex {
+  justify-content: space-between;
+}
+.navbar .logo {
+  color: #870C25;
+  transition: all 1s ease;
+}
+.navbar .logo:hover {
+  transform: scale(1.2);
+  color: #242424;
+}
+.navbar .logo span {
+  color: #fff;
+}
+.navbar nav ul {
+  display: flex;
+}
+.navbar nav ul a {
+  color: #fff;
+  padding: 0.625rem;
+  margin: 0 0.313rem;
+  font-weight: 600;
+}
+.navbar nav ul a:hover {
+  border-bottom: 2px solid #fff;
+  color: #242424;
+}
+
+/*----------HEADER| NAVBAR STYLING END----------*/
+/*----------MAIN STYLING START----------*/
+main {
+  /* ------SHOWCASE START ------*/
+  /* ------SHOWCASE END ------*/
+}
+main .showcase {
+  height: 400px;
+  color: #fff;
+  background-color: #dc143c;
+  position: relative;
+}
+main .showcase h1 {
+  font-size: 2.5rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+main .showcase p {
+  margin: 1.25rem 0;
+}
+main .showcase .grid {
+  grid-template-columns: 55% 45%;
+  gap: 1.875rem;
+}
+
+/*----------MAIN STYLING END----------*/
 
 /*# sourceMappingURL=style.css.map */

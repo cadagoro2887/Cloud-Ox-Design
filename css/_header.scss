@@ -1,0 +1,46 @@
+/*----------HEADER| NAVBAR STYLING START----------*/
+.navbar {
+    background-color: $Primary;
+    color: #fff;
+    height: 4.375rem;
+
+
+    &.navbar .flex {
+        justify-content: space-between;
+    }
+
+    .logo {
+        color: $tertiary;
+        transition: all 1s ease;
+
+        &:hover {
+            transform: scale(1.2);
+            color: $Gray;
+        }
+
+        span {
+            color: #fff;
+        }
+    }
+
+    nav {
+        ul {
+            display: flex;
+
+            a {
+                color: #fff;
+                padding: 0.625rem;
+                margin: 0 0.313rem;
+                font-weight: 600;
+
+                &:hover {
+                    border-bottom: 2px solid #fff;
+                    color: $Gray;
+                }
+            }
+        }
+    }
+
+}
+
+/*----------HEADER| NAVBAR STYLING END----------*/

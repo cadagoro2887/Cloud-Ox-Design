@@ -1,0 +1,89 @@
+/*---------------------GLOBAL STYLING START-------------------------*/
+
+// URL GOOGLE FONTS
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap');
+
+// FONTS VARIABLE START 
+$Lato: "Lato",
+sans-serif;
+$Raleway: "Raleway",
+sans-serif;
+
+// COLORS VARIABLE START
+$Primary: #dc143c;
+$Secundary: #c71236;
+$tertiary:#870C25;
+$Gray: #242424;
+// ------------------------------------------------------------------------------------
+
+// GENERAL STYLES
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: $Raleway;
+    line-height: 1.6;
+    color: $Gray;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    color: $Gray;
+}
+
+h1,
+h2 {
+    line-height: 1.2;
+    margin: 0.625rem 0;
+}
+
+p {
+    margin: 0.625rem 0;
+}
+
+img {
+    width: 100%;
+}
+
+/*CLASS STYLING START*/
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    overflow: auto;
+    padding: 0 2.5rem;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card {
+    background-color: #fff;
+    border-radius: 0.625rem;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    padding: 1.25rem;
+    margin: 0.625rem;
+    color: $Gray;
+}
+
+/*---------------------GLOBAL STYLING END-------------------------*/
