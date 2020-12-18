@@ -19,11 +19,61 @@ main {
 
         }
 
+        .btn-outline {
+            background-color: transparent;
+            border: 1px solid #fff;
+        }
+
         .grid {
             grid-template-columns: 55% 45%;
             gap: 1.875rem;
+            overflow: visible;
+        }
+
+        .showcase-form {
+            position: relative;
+            top: 3.75rem;
+            height: 350px;
+            width: 400px;
+            padding: 2.5rem;
+            z-index: 100;
+            justify-self: flex-end;
+
+            .form-control {
+                margin: 1.875rem 0;
+
+                input[type="text"],
+                input[type="email"] {
+                    border: 0;
+                    border-bottom: 1px solid $Secundary;
+                    width: 100%;
+                    font-size: 1rem;
+                    padding: 0.188;
+                    background-color: transparent;
+
+                    &:focus {
+                        outline: none;
+                    }
+                }
+            }
+        }
+
+        &.showcase::before,
+        .showcase::after {
+            content: '';
+            position: absolute;
+            height: 100px;
+            bottom: -70px;
+            right: 0;
+            left: 0;
+            background: #fff;
+            transform: skewY(4deg);
+            -webkit-transform: skewY(4deg);
+            -moz-transform: skewY(4deg);
+            -ms-transform: skewY(4deg);
         }
     }
+
 
     /* ------SHOWCASE END ------*/
 }

@@ -26,6 +26,7 @@ $Gray: #242424;
 
 body {
     font-family: $Raleway;
+    font-weight: 400;
     line-height: 1.6;
     color: $Gray;
 }
@@ -79,11 +80,32 @@ img {
 
 .card {
     background-color: #fff;
+    background-image: url("../Assets/Image/Fondo.png");
+    background-repeat: no-repeat;
     border-radius: 0.625rem;
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
     padding: 1.25rem;
     margin: 0.625rem;
     color: $Gray;
+
+    ::placeholder {
+        color: $tertiary;
+    }
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.625rem 1.875rem;
+    cursor: pointer;
+    background-color: $Primary;
+    border: none;
+    color: #fff;
+    border-radius: 0.313rem;
+    transition: all 0.4s ease;
+
+    &:hover {
+        transform: scale(0.90);
+    }
 }
 
 /*---------------------GLOBAL STYLING END-------------------------*/
