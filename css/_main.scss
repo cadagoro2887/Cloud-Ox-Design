@@ -74,8 +74,39 @@ main {
         }
     }
 
-
     /* ------SHOWCASE END ------*/
+
+    /* ------STATS START ------*/
+    .stats {
+        padding-top: 6.25rem;
+
+        .stats-heading {
+            max-width: 700px;
+            margin: auto;
+            font-family: $Lato;
+            color: $Gray;
+            margin-top: 50px;
+        }
+
+
+
+        .grid {
+            h3 {
+                font-size: 1.875rem;
+                font-family: $Lato;
+            }
+
+            p {
+                font-size: 1.25rem;
+                font-weight: bold;
+                color: $tertiary;
+            }
+        }
+    }
+
+    /* ------STAST END ------*/
+
+
 }
 
 /*----------MAIN STYLING END----------*/

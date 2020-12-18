@@ -61,9 +61,13 @@ img {
   height: 100%;
 }
 
+.grid-3 {
+  grid-template-columns: repeat(4, 1fr);
+}
+
 .card {
   background-color: #fff;
-  background-image: url("../Assets/Image/Fondo.png");
+  background-image: url("../Assets/Image/background/Fondo.png");
   background-repeat: no-repeat;
   border-radius: 0.625rem;
   box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
@@ -87,6 +91,92 @@ img {
 }
 .btn:hover {
   transform: scale(0.9);
+}
+
+.text-center {
+  text-align: center;
+}
+
+/* ------MARGIN------*/
+.my-1 {
+  margin: 2rem 0;
+}
+
+.my-2 {
+  margin: 2.5rem 0;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.my-4 {
+  margin: 3.5rem 0;
+}
+
+.my-5 {
+  margin: 4rem 0;
+}
+
+.m-1 {
+  margin: 2rem;
+}
+
+.m-2 {
+  margin: 2.5rem;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.m-4 {
+  margin: 3.5rem;
+}
+
+.m-5 {
+  margin: 4rem;
+}
+
+/*------PADDING------*/
+.py-1 {
+  padding: 2rem 0;
+}
+
+.py-2 {
+  padding: 2.5rem 0;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.py-4 {
+  padding: 3.5rem 0;
+}
+
+.py-5 {
+  padding: 4rem 0;
+}
+
+.p-1 {
+  padding: 2rem;
+}
+
+.p-2 {
+  padding: 2.5rem;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.p-4 {
+  padding: 3.5rem;
+}
+
+.p-5 {
+  padding: 4rem;
 }
 
 /*---------------------GLOBAL STYLING END-------------------------*/
@@ -131,6 +221,8 @@ img {
 main {
   /* ------SHOWCASE START ------*/
   /* ------SHOWCASE END ------*/
+  /* ------STATS START ------*/
+  /* ------STAST END ------*/
 }
 main .showcase {
   height: 400px;
@@ -193,6 +285,25 @@ main .showcase .showcase::after {
   -webkit-transform: skewY(4deg);
   -moz-transform: skewY(4deg);
   -ms-transform: skewY(4deg);
+}
+main .stats {
+  padding-top: 6.25rem;
+}
+main .stats .stats-heading {
+  max-width: 700px;
+  margin: auto;
+  font-family: "Lato", sans-serif;
+  color: #242424;
+  margin-top: 50px;
+}
+main .stats .grid h3 {
+  font-size: 1.875rem;
+  font-family: "Lato", sans-serif;
+}
+main .stats .grid p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #870C25;
 }
 
 /*----------MAIN STYLING END----------*/
