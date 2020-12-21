@@ -223,9 +223,11 @@ main {
   /* ------SHOWCASE END ------*/
   /* ------STATS START ------*/
   /* ------STAST END ------*/
+  /* ------CLI START ------*/
+  /* ------CLI END ------*/
 }
 main .showcase {
-  height: 400px;
+  height: 450px;
   color: #fff;
   background-color: #dc143c;
   position: relative;
@@ -294,7 +296,7 @@ main .stats .stats-heading {
   margin: auto;
   font-family: "Lato", sans-serif;
   color: #242424;
-  margin-top: 50px;
+  margin-top: 80px;
 }
 main .stats .grid h3 {
   font-size: 1.875rem;
@@ -304,6 +306,25 @@ main .stats .grid p {
   font-size: 1.25rem;
   font-weight: bold;
   color: #870C25;
+}
+main .cli .grid {
+  margin-top: 150px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+main .cli .grid > *:first-child {
+  grid-column: 1/span 2;
+  grid-row: 1/span 2;
+}
+main .cli .grid img {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 0.625rem;
+}
+main .cli .card-npm {
+  background-image: none;
+}
+main .cli .card-npm h3 {
+  font-size: 1 rem;
 }
 
 /*----------MAIN STYLING END----------*/

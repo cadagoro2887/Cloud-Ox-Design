@@ -3,7 +3,7 @@ main {
 
     /* ------SHOWCASE START ------*/
     .showcase {
-        height: 400px;
+        height: 450px;
         color: #fff;
         background-color: $Primary;
         position: relative;
@@ -85,10 +85,8 @@ main {
             margin: auto;
             font-family: $Lato;
             color: $Gray;
-            margin-top: 50px;
+            margin-top: 80px;
         }
-
-
 
         .grid {
             h3 {
@@ -105,6 +103,37 @@ main {
     }
 
     /* ------STAST END ------*/
+
+    /* ------CLI START ------*/
+
+    .cli {
+        .grid {
+            margin-top: 150px;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+
+            &>*:first-child {
+                grid-column: 1 / span 2;
+                grid-row: 1/ span 2;
+            }
+
+            img {
+                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+                border-radius: 0.625rem;
+
+            }
+        }
+
+        .card-npm {
+            background-image: none;
+
+            h3 {
+                font-size: 1 rem;
+            }
+        }
+    }
+
+    /* ------CLI END ------*/
 
 
 }
