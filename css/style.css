@@ -93,8 +93,45 @@ img {
   transform: scale(0.9);
 }
 
+.btn-outline {
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+/* ------ TEXT SIZES ------*/
+.lead {
+  font-size: 1.25rem;
+}
+
+.sm {
+  font-size: 1rem;
+}
+
+.md {
+  font-size: 2rem;
+}
+
+.lg {
+  font-size: 3rem;
+}
+
+.xl {
+  font-size: 4rem;
+}
+
 .text-center {
   text-align: center;
+}
+
+/*------ BACKGROUND ------*/
+.bg-primary {
+  background-color: #dc143c;
+  color: #fff;
+}
+
+.bg-dark {
+  background-color: #870C25;
+  color: #fff;
 }
 
 /* ------MARGIN------*/
@@ -219,12 +256,21 @@ img {
 /*----------HEADER| NAVBAR STYLING END----------*/
 /*----------MAIN STYLING START----------*/
 main {
+  /* --------------------SECTION #1------------------- */
   /* ------SHOWCASE START ------*/
   /* ------SHOWCASE END ------*/
-  /* ------STATS START ------*/
-  /* ------STAST END ------*/
+  /* --------------------SECTION #2------------------- */
   /* ------CLI START ------*/
   /* ------CLI END ------*/
+  /* --------------------SECTION #3------------------- */
+  /* ------STATS START ------*/
+  /* ------STAST END ------*/
+  /* --------------------SECTION #4------------------- */
+  /* ------CLOUD START ------*/
+  /* ------CLOUD END ------*/
+  /* --------------------SECTION #5------------------- */
+  /* ------LANGUAGES START ------*/
+  /* ------LANGUAGES END ------*/
 }
 main .showcase {
   height: 450px;
@@ -239,10 +285,6 @@ main .showcase h1 {
 }
 main .showcase p {
   margin: 1.25rem 0;
-}
-main .showcase .btn-outline {
-  background-color: transparent;
-  border: 1px solid #fff;
 }
 main .showcase .grid {
   grid-template-columns: 55% 45%;
@@ -288,25 +330,6 @@ main .showcase .showcase::after {
   -moz-transform: skewY(4deg);
   -ms-transform: skewY(4deg);
 }
-main .stats {
-  padding-top: 6.25rem;
-}
-main .stats .stats-heading {
-  max-width: 700px;
-  margin: auto;
-  font-family: "Lato", sans-serif;
-  color: #242424;
-  margin-top: 80px;
-}
-main .stats .grid h3 {
-  font-size: 1.875rem;
-  font-family: "Lato", sans-serif;
-}
-main .stats .grid p {
-  font-size: 1.25rem;
-  font-weight: bold;
-  color: #870C25;
-}
 main .cli .grid {
   margin-top: 150px;
   grid-template-columns: repeat(3, 1fr);
@@ -325,6 +348,78 @@ main .cli .card-npm {
 }
 main .cli .card-npm h3 {
   font-size: 1 rem;
+}
+main .stats {
+  padding-top: 6.25rem;
+}
+main .stats .stats-heading {
+  max-width: 700px;
+  margin: 30px auto;
+  font-family: "Lato", sans-serif;
+  color: #242424;
+  font-size: 1.5rem;
+}
+main .stats .grid h3 {
+  font-size: 1.875rem;
+  font-family: "Lato", sans-serif;
+}
+main .stats .grid p {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #242424;
+}
+main .stats .grid p span {
+  color: #c71236;
+}
+main .cloud .grid {
+  grid-template-columns: 4fr 3fr;
+}
+main .cloud .grid h2 {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+}
+main .languages h2 {
+  font-family: "Lato", sans-serif;
+  font-size: 1.5rem;
+}
+main .languages .card {
+  width: 260px;
+  height: 150px;
+  text-align: center;
+  margin: 18px 10px 40px;
+}
+main .languages .card:hover img {
+  transform: scale(0.9);
+}
+main .languages .card h4 {
+  font-size: 1rem;
+  margin-bottom: 2px;
+}
+main .languages .card img {
+  width: 82px;
+  height: 82px;
+  transition: transform 0.2s ease-in;
+}
+main .languages .box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.2s ease-in;
+}
+main .languages .box:hover::before {
+  background: linear-gradient(315deg, #ff0057, #e64a19);
+}
+main .languages .box:before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -2px;
+  bottom: -2px;
+  background: #242424;
+  transform: skew(2deg, 2deg);
+  z-index: -1;
 }
 
 /*----------MAIN STYLING END----------*/

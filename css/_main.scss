@@ -1,6 +1,7 @@
 /*----------MAIN STYLING START----------*/
 main {
 
+    /* --------------------SECTION #1------------------- */
     /* ------SHOWCASE START ------*/
     .showcase {
         height: 450px;
@@ -19,10 +20,7 @@ main {
 
         }
 
-        .btn-outline {
-            background-color: transparent;
-            border: 1px solid #fff;
-        }
+
 
         .grid {
             grid-template-columns: 55% 45%;
@@ -76,36 +74,8 @@ main {
 
     /* ------SHOWCASE END ------*/
 
-    /* ------STATS START ------*/
-    .stats {
-        padding-top: 6.25rem;
-
-        .stats-heading {
-            max-width: 700px;
-            margin: auto;
-            font-family: $Lato;
-            color: $Gray;
-            margin-top: 80px;
-        }
-
-        .grid {
-            h3 {
-                font-size: 1.875rem;
-                font-family: $Lato;
-            }
-
-            p {
-                font-size: 1.25rem;
-                font-weight: bold;
-                color: $tertiary;
-            }
-        }
-    }
-
-    /* ------STAST END ------*/
-
+    /* --------------------SECTION #2------------------- */
     /* ------CLI START ------*/
-
     .cli {
         .grid {
             margin-top: 150px;
@@ -135,6 +105,119 @@ main {
 
     /* ------CLI END ------*/
 
+    /* --------------------SECTION #3------------------- */
+    /* ------STATS START ------*/
+    .stats {
+        padding-top: 6.25rem;
+
+        .stats-heading {
+            max-width: 700px;
+            margin: 30px auto;
+            font-family: $Lato;
+            color: $Gray;
+            font-size: 1.5rem;
+        }
+
+        .grid {
+            h3 {
+                font-size: 1.875rem;
+                font-family: $Lato;
+            }
+
+            p {
+                font-size: 1.25rem;
+                font-weight: bold;
+                color: $Gray;
+
+                span {
+                    color: $Secundary;
+                }
+            }
+
+
+        }
+    }
+
+    /* ------STAST END ------*/
+
+
+    /* --------------------SECTION #4------------------- */
+    /* ------CLOUD START ------*/
+    .cloud {
+        .grid {
+            grid-template-columns: 4fr 3fr;
+
+            h2 {
+                font-family: $Lato;
+                font-weight: 400;
+            }
+        }
+    }
+
+    /* ------CLOUD END ------*/
+
+    /* --------------------SECTION #5------------------- */
+
+    /* ------LANGUAGES START ------*/
+    .languages {
+        h2 {
+            font-family: $Lato;
+            font-size: 1.5rem;
+
+        }
+
+
+        .card {
+            width: 260px;
+            height: 150px;
+            text-align: center;
+            margin: 18px 10px 40px;
+
+            &:hover img {
+                transform: scale(0.90);
+            }
+
+            h4 {
+                font-size: 1rem;
+                margin-bottom: 2px;
+            }
+
+            img {
+                width: 82px;
+                height: 82px;
+                transition: transform 0.2s ease-in;
+
+            }
+        }
+
+        .box {
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.2s ease-in;
+
+
+            &:hover::before {
+                background: linear-gradient(315deg, #ff0057, #e64a19);
+            }
+
+            &:before {
+                content: "";
+                position: absolute;
+                top: -5px;
+                left: -5px;
+                right: -2px;
+                bottom: -2px;
+                background: $Gray;
+                transform: skew(2deg, 2deg);
+                z-index: -1;
+
+            }
+        }
+    }
+
+    /* ------LANGUAGES END ------*/
 
 }
 

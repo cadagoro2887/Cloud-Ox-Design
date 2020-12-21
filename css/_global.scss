@@ -113,8 +113,46 @@ img {
     }
 }
 
+.btn-outline {
+    background-color: transparent;
+    border: 1px solid #fff;
+}
+
+/* ------ TEXT SIZES ------*/
+.lead {
+    font-size: 1.25rem;
+}
+
+.sm {
+    font-size: 1rem;
+}
+
+.md {
+    font-size: 2rem;
+}
+
+.lg {
+    font-size: 3rem;
+}
+
+.xl {
+    font-size: 4rem;
+}
+
 .text-center {
     text-align: center;
+}
+
+
+/*------ BACKGROUND ------*/
+.bg-primary {
+    background-color: $Primary;
+    color: #fff;
+}
+
+.bg-dark {
+    background-color: $tertiary;
+    color: #fff;
 }
 
 /* ------MARGIN------*/
