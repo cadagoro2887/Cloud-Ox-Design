@@ -1,3 +1,4 @@
+/*GLOBAL STYLING FILE _GLOBAL.SCSS*/
 /*---------------------GLOBAL STYLING START-------------------------*/
 @import url("https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
@@ -217,6 +218,7 @@ img {
 }
 
 /*---------------------GLOBAL STYLING END-------------------------*/
+/*HEADER STYLING FILE _HEADER.SCSS*/
 /*----------HEADER| NAVBAR STYLING START----------*/
 .navbar {
   background-color: #dc143c;
@@ -254,6 +256,7 @@ img {
 }
 
 /*----------HEADER| NAVBAR STYLING END----------*/
+/*MAIN STYLING FILE _MAIN.SCSS*/
 /*----------MAIN STYLING START----------*/
 main {
   /* --------------------SECTION #1------------------- */
@@ -423,6 +426,7 @@ main .languages .box:before {
 }
 
 /*----------MAIN STYLING END----------*/
+/*FOOTER STYLING FILE _FOOTER.SCSS*/
 /*----------FOOTER STYLING START----------*/
 footer .grid {
   grid-template-columns: 2fr 1fr 1fr;
@@ -438,9 +442,6 @@ footer a:hover {
 footer p a {
   color: #dc143c;
 }
-footer p a:hover {
-  border-bottom: 2px solid #dc143c;
-}
 footer .social a {
   color: #fff;
   transition: all 0.4s ease;
@@ -452,5 +453,86 @@ footer .social a:hover {
 }
 
 /*----------FOOTER STYLING END----------*/
+/*@MEDIA QUERY STYLING FILE _MEDIAQUERY.SCSS */
+/*----------@MEDIA  QUERY STYLING START----------*/
+/*------4K------*/
+@media (min-width: 2000px) {
+  main .showcase::before,
+main .showcase::after {
+    content: "";
+    position: absolute;
+    height: 120px;
+    bottom: -90px;
+    right: 0;
+    left: 0;
+    background: #fff;
+    transform: skewY(4deg);
+    -webkit-transform: skewY(4deg);
+    -moz-transform: skewY(4deg);
+    -ms-transform: skewY(4deg);
+  }
+}
+/*------LAPTOP------*/
+@media (max-width: 1024px) {
+  main .languages .flex {
+    flex-wrap: wrap;
+  }
+}
+/*------TABLETS AND UNDER------*/
+@media (max-width: 768px) {
+  .grid,
+.showcase .grid,
+.stats .grid,
+.cli .grid,
+.cloud .grid {
+    grid-template-columns: 1fr !important;
+    grid-template-rows: 1fr !important;
+  }
+
+  header .navbar {
+    margin-bottom: -1px;
+  }
+
+  main {
+    /*------SECTION #1 SHOWCASE START------*/
+    /*------SECTION #2 CLI START------*/
+    /*------SECTION #3 STATS START------*/
+  }
+  main .showcase {
+    height: auto;
+  }
+  main .showcase .showcase-text {
+    text-align: center;
+    margin-top: 40px;
+  }
+  main .showcase .showcase-form {
+    justify-self: center;
+    margin: auto;
+  }
+  main .cli .grid > *:first-child {
+    grid-column: 1;
+    grid-row: 1;
+  }
+  main .stats .grid h3 {
+    font-size: 2rem;
+  }
+  main .stats .grid p {
+    font-size: 2rem;
+  }
+}
+/*------MOBILE------*/
+@media (max-width: 500px) {
+  header .navbar {
+    height: 110px;
+  }
+  header .navbar .flex {
+    flex-direction: column;
+  }
+  header .navbar .flex nav ul {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+}
+/*----------@MEDIA QUERY STYLING START----------*/
 
 /*# sourceMappingURL=style.css.map */
