@@ -24,3 +24,19 @@ $(window).scroll(function () {
         nCount(".rect > h3")
     }
 });
+
+// TYPING ANIMATION SCRIPT
+var typed = new Typed(".typing", {
+    strings: ["Easier Deployment", "Cloud", "Hosting", "Ox"],
+    typeSpeed: 100,
+    backSpeed: 80,
+    loop: true
+});
+
+
+var typed = new Typed(".typing_2", {
+    strings: ["Cloud Hosting Ox"],
+    typeSpeed: 100,
+    backSpeed: 80,
+    loop: true
+});
