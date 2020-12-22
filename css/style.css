@@ -274,6 +274,8 @@ main {
   /* --------------------SECTION #5------------------- */
   /* ------LANGUAGES START ------*/
   /* ------LANGUAGES END ------*/
+  /*/////////////////////////////////INDEX STYLING END//////////////////////////////////////////*/
+  /*///////////////////////////////////////////////////////////////////////////////////////////*/
 }
 main .showcase {
   height: 450px;
@@ -423,6 +425,10 @@ main .languages .box:before {
   background: #242424;
   transform: skew(2deg, 2deg);
   z-index: -1;
+}
+main .features-head img {
+  width: 200px;
+  justify-self: flex-end;
 }
 
 /*----------MAIN STYLING END----------*/
