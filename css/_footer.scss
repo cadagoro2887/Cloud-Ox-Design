@@ -1,0 +1,43 @@
+/*----------FOOTER STYLING START----------*/
+
+footer {
+    .grid {
+        grid-template-columns: 2fr 1fr 1fr;
+    }
+
+    a {
+        color: #fff;
+        margin: 0 10px;
+
+        &:hover {
+            border-bottom: 2px solid $Primary;
+            text-decoration: none;
+        }
+    }
+
+    p {
+        a {
+            color: $Primary;
+
+            &:hover {
+                border-bottom: 2px solid $Primary;
+
+            }
+        }
+    }
+
+    .social {
+        a {
+            color: #fff;
+            transition: all 0.4s ease;
+
+            &:hover {
+                border-bottom: none;
+                color: $Primary;
+                transform: scale(1.3);
+            }
+        }
+    }
+}
+
+/*----------FOOTER STYLING END----------*/
