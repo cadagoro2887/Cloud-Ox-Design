@@ -1,233 +1,256 @@
-/*----------MAIN STYLING START----------*/
-main {
+    /*******************************INDEX.HTML*******************************/
+    /*----------MAIN STYLING START----------*/
+    main {
 
-    /* --------------------SECTION #1------------------- */
-    /* ------SHOWCASE START ------*/
-    .showcase {
-        height: 450px;
-        color: #fff;
-        background-color: $Primary;
-        position: relative;
-
-        h1 {
-            font-size: 2.5rem;
-            font-family: $Lato;
-            font-weight: 400;
-        }
-
-        p {
-            margin: 1.25rem 0;
-
-        }
-
-
-
-        .grid {
-            grid-template-columns: 55% 45%;
-            gap: 1.875rem;
-            overflow: visible;
-        }
-
-        .showcase-form {
+        /* --------------------SECTION #1------------------- */
+        /* ------SHOWCASE START ------*/
+        .showcase {
+            height: 450px;
+            color: #fff;
+            background-color: $Primary;
             position: relative;
-            top: 3.75rem;
-            height: 350px;
-            width: 400px;
-            padding: 2.5rem;
-            z-index: 100;
-            justify-self: flex-end;
 
-            .form-control {
-                margin: 1.875rem 0;
-
-                input[type="text"],
-                input[type="email"] {
-                    border: 0;
-                    border-bottom: 1px solid $Secundary;
-                    width: 100%;
-                    font-size: 1rem;
-                    padding: 0.188;
-                    background-color: transparent;
-
-                    &:focus {
-                        outline: none;
-                    }
-                }
-            }
-        }
-
-        &.showcase::before,
-        .showcase::after {
-            content: '';
-            position: absolute;
-            height: 100px;
-            bottom: -70px;
-            right: 0;
-            left: 0;
-            background: #fff;
-            transform: skewY(4deg);
-            -webkit-transform: skewY(4deg);
-            -moz-transform: skewY(4deg);
-            -ms-transform: skewY(4deg);
-        }
-    }
-
-    /* ------SHOWCASE END ------*/
-
-    /* --------------------SECTION #2------------------- */
-    /* ------CLI START ------*/
-    .cli {
-        .grid {
-            margin-top: 150px;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: repeat(2, 1fr);
-
-            &>*:first-child {
-                grid-column: 1 / span 2;
-                grid-row: 1/ span 2;
-            }
-
-            img {
-                box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
-                border-radius: 0.625rem;
-
-            }
-        }
-
-        .card-npm {
-            background-image: none;
-
-            h3 {
-                font-size: 1 rem;
-            }
-        }
-    }
-
-    /* ------CLI END ------*/
-
-    /* --------------------SECTION #3------------------- */
-    /* ------STATS START ------*/
-    .stats {
-        padding-top: 6.25rem;
-
-        .stats-heading {
-            max-width: 700px;
-            margin: 30px auto;
-            font-family: $Lato;
-            color: $Gray;
-            font-size: 1.5rem;
-        }
-
-        .grid {
-            h3 {
-                font-size: 1.875rem;
-                font-family: $Lato;
-            }
-
-            p {
-                font-size: 1.25rem;
-                font-weight: bold;
-                color: $Gray;
-
-                span {
-                    color: $Secundary;
-                }
-            }
-
-
-        }
-    }
-
-    /* ------STAST END ------*/
-
-
-    /* --------------------SECTION #4------------------- */
-    /* ------CLOUD START ------*/
-    .cloud {
-        .grid {
-            grid-template-columns: 4fr 3fr;
-
-            h2 {
+            h1 {
+                font-size: 2.5rem;
                 font-family: $Lato;
                 font-weight: 400;
             }
-        }
-    }
 
-    /* ------CLOUD END ------*/
+            p {
+                margin: 1.25rem 0;
 
-    /* --------------------SECTION #5------------------- */
-
-    /* ------LANGUAGES START ------*/
-    .languages {
-        h2 {
-            font-family: $Lato;
-            font-size: 1.5rem;
-
-        }
-
-
-        .card {
-            width: 260px;
-            height: 150px;
-            text-align: center;
-            margin: 18px 10px 40px;
-
-            &:hover img {
-                transform: scale(0.90);
             }
 
-            h4 {
-                font-size: 1rem;
-                margin-bottom: 2px;
+
+
+            .grid {
+                grid-template-columns: 55% 45%;
+                gap: 1.875rem;
+                overflow: visible;
             }
 
-            img {
-                width: 82px;
-                height: 82px;
+            .showcase-form {
+                position: relative;
+                top: 3.75rem;
+                height: 350px;
+                width: 400px;
+                padding: 2.5rem;
+                z-index: 100;
+                justify-self: flex-end;
+
+                .form-control {
+                    margin: 1.875rem 0;
+
+                    input[type="text"],
+                    input[type="email"] {
+                        border: 0;
+                        border-bottom: 1px solid $Secundary;
+                        width: 100%;
+                        font-size: 1rem;
+                        padding: 0.188;
+                        background-color: transparent;
+
+                        &:focus {
+                            outline: none;
+                        }
+                    }
+                }
+            }
+
+            &.showcase::before,
+            .showcase::after {
+                content: '';
+                position: absolute;
+                height: 100px;
+                bottom: -70px;
+                right: 0;
+                left: 0;
+                background: #fff;
+                transform: skewY(4deg);
+                -webkit-transform: skewY(4deg);
+                -moz-transform: skewY(4deg);
+                -ms-transform: skewY(4deg);
+            }
+        }
+
+        /* ------SHOWCASE END ------*/
+
+        /* --------------------SECTION #2------------------- */
+        /* ------CLI START ------*/
+        .cli {
+            .grid {
+                margin-top: 150px;
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-rows: repeat(2, 1fr);
+
+                &>*:first-child {
+                    grid-column: 1 / span 2;
+                    grid-row: 1/ span 2;
+                }
+
+                img {
+                    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.3);
+                    border-radius: 0.625rem;
+
+                }
+            }
+
+            .card-npm {
+                background-image: none;
+
+                h3 {
+                    font-size: 1 rem;
+                }
+            }
+        }
+
+        /* ------CLI END ------*/
+
+        /* --------------------SECTION #3------------------- */
+        /* ------STATS START ------*/
+        .stats {
+            padding-top: 6.25rem;
+
+            .stats-heading {
+                max-width: 700px;
+                margin: 30px auto;
+                font-family: $Lato;
+                color: $Gray;
+                font-size: 1.5rem;
+            }
+
+            .grid {
+                h3 {
+                    font-size: 1.875rem;
+                    font-family: $Lato;
+                }
+
+                p {
+                    font-size: 1.25rem;
+                    font-weight: bold;
+                    color: $Gray;
+
+                    span {
+                        color: $Secundary;
+                    }
+                }
+
+
+            }
+        }
+
+        /* ------STAST END ------*/
+
+
+        /* --------------------SECTION #4------------------- */
+        /* ------CLOUD START ------*/
+        .cloud {
+            .grid {
+                grid-template-columns: 4fr 3fr;
+
+                h2 {
+                    font-family: $Lato;
+                    font-weight: 400;
+                }
+            }
+        }
+
+        /* ------CLOUD END ------*/
+
+        /* --------------------SECTION #5------------------- */
+
+        /* ------LANGUAGES START ------*/
+        .languages {
+            h2 {
+                font-family: $Lato;
+                font-size: 1.5rem;
+
+            }
+
+
+            .card {
+                width: 260px;
+                height: 150px;
+                text-align: center;
+                margin: 18px 10px 40px;
+
+                &:hover img {
+                    transform: scale(0.90);
+                }
+
+                h4 {
+                    font-size: 1rem;
+                    margin-bottom: 2px;
+                }
+
+                img {
+                    width: 82px;
+                    height: 82px;
+                    transition: transform 0.2s ease-in;
+
+                }
+            }
+
+            .box {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                align-items: center;
                 transition: transform 0.2s ease-in;
 
+
+                &:hover::before {
+                    background: linear-gradient(315deg, #ff0057, #e64a19);
+                }
+
+                &:before {
+                    content: "";
+                    position: absolute;
+                    top: -5px;
+                    left: -5px;
+                    right: -2px;
+                    bottom: -2px;
+                    background: $Gray;
+                    transform: skew(2deg, 2deg);
+                    z-index: -1;
+
+                }
             }
         }
 
-        .box {
-            position: relative;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: transform 0.2s ease-in;
+        /* ------LANGUAGES END ------*/
+        /*/////////////////////////////////INDEX STYLING END//////////////////////////////////////////*/
+        /*///////////////////////////////////////////////////////////////////////////////////////////*/
 
+        /*******************************FEATURES.HTML*******************************/
+        /* --------------------SECTION #1------------------- */
+        /*------FEATURES-HEAD START------*/
+        .features-head {
+            img {
 
-            &:hover::before {
-                background: linear-gradient(315deg, #ff0057, #e64a19);
-            }
-
-            &:before {
-                content: "";
-                position: absolute;
-                top: -5px;
-                left: -5px;
-                right: -2px;
-                bottom: -2px;
-                background: $Gray;
-                transform: skew(2deg, 2deg);
-                z-index: -1;
-
+                width: 200px;
+                justify-self: flex-end;
             }
         }
+
+        /*------FEATURES-HEAD END------*/
+
+
+        /* --------------------SECTION #2------------------- */
+        /*------FEATURES-SUB-HEAD START------*/
+        .features-sub-head {
+            background: url(/Assets/Image/background/Fondo.png) no-repeat;
+            background-position: left;
+            overflow: hidden;
+
+            img {
+                width: 300px;
+                justify-self: flex-end;
+                margin-top: 15px;
+            }
+        }
+
+        /*------FEATURES-SUB-HEAD END------*/
     }
 
-    /* ------LANGUAGES END ------*/
-    /*/////////////////////////////////INDEX STYLING END//////////////////////////////////////////*/
-    /*///////////////////////////////////////////////////////////////////////////////////////////*/
-
-
-    .features-head {
-        img {
-            width: 200px;
-            justify-self: flex-end;
-        }
-    }
-}
-
-/*----------MAIN STYLING END----------*/
+    /*----------MAIN STYLING END----------*/

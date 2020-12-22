@@ -257,6 +257,7 @@ img {
 
 /*----------HEADER| NAVBAR STYLING END----------*/
 /*MAIN STYLING FILE _MAIN.SCSS*/
+/*******************************INDEX.HTML*******************************/
 /*----------MAIN STYLING START----------*/
 main {
   /* --------------------SECTION #1------------------- */
@@ -276,6 +277,13 @@ main {
   /* ------LANGUAGES END ------*/
   /*/////////////////////////////////INDEX STYLING END//////////////////////////////////////////*/
   /*///////////////////////////////////////////////////////////////////////////////////////////*/
+  /*******************************FEATURES.HTML*******************************/
+  /* --------------------SECTION #1------------------- */
+  /*------FEATURES-HEAD START------*/
+  /*------FEATURES-HEAD END------*/
+  /* --------------------SECTION #2------------------- */
+  /*------FEATURES-SUB-HEAD START------*/
+  /*------FEATURES-SUB-HEAD END------*/
 }
 main .showcase {
   height: 450px;
@@ -429,6 +437,16 @@ main .languages .box:before {
 main .features-head img {
   width: 200px;
   justify-self: flex-end;
+}
+main .features-sub-head {
+  background: url(/Assets/Image/background/Fondo.png) no-repeat;
+  background-position: left;
+  overflow: hidden;
+}
+main .features-sub-head img {
+  width: 300px;
+  justify-self: flex-end;
+  margin-top: 15px;
 }
 
 /*----------MAIN STYLING END----------*/
