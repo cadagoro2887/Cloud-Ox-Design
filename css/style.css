@@ -63,7 +63,7 @@ img {
 }
 
 .grid-3 {
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .card {
@@ -284,6 +284,9 @@ main {
   /* --------------------SECTION #2------------------- */
   /*------FEATURES-SUB-HEAD START------*/
   /*------FEATURES-SUB-HEAD END------*/
+  /* --------------------SECTION #3------------------- */
+  /*------FEATURES-MAIN START------*/
+  /*------FEATURES-MAIN START------*/
 }
 main .showcase {
   height: 450px;
@@ -372,6 +375,9 @@ main .stats .stats-heading {
   color: #242424;
   font-size: 1.5rem;
 }
+main .stats .grid {
+  grid-template-columns: repeat(4, 1fr);
+}
 main .stats .grid h3 {
   font-size: 1.875rem;
   font-family: "Lato", sans-serif;
@@ -435,18 +441,40 @@ main .languages .box:before {
   z-index: -1;
 }
 main .features-head img {
-  width: 200px;
+  width: 250px;
   justify-self: flex-end;
 }
 main .features-sub-head {
   background: url(/Assets/Image/background/Fondo.png) no-repeat;
-  background-position: left;
-  overflow: hidden;
+  background-position: 180px;
+  background-size: contain;
+  margin-top: 50px;
 }
 main .features-sub-head img {
   width: 300px;
   justify-self: flex-end;
   margin-top: 15px;
+}
+main .features-main .grid {
+  padding: 30px;
+}
+main .features-main .grid > *:first-child {
+  grid-column: 1/span 3;
+}
+main .features-main .grid > *:nth-child(2) {
+  grid-column: 1/span 2;
+}
+main .features-main .grid .card {
+  background-image: none;
+  margin-bottom: 15px;
+}
+main .features-main .grid .card:hover i {
+  transform: scale(1.2);
+  transition: all 0.4s ease;
+  color: #c71236;
+}
+main .features-main .grid .card i {
+  margin-right: 20px;
 }
 
 /*----------MAIN STYLING END----------*/
