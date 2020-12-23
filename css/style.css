@@ -445,7 +445,7 @@ main .features-head img {
   justify-self: flex-end;
 }
 main .features-sub-head {
-  background: url(/Assets/Image/background/Fondo.png) no-repeat;
+  background: url(../Assets/Image/background/Fondo.png) no-repeat;
   background-position: 180px;
   background-size: contain;
   margin-top: 50px;
