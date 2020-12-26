@@ -229,7 +229,8 @@
 
         /* --------------------SECTION #1------------------- */
         /*------FEATURES-HEAD START------*/
-        .features-head {
+        .features-head,
+        .docs-head {
             img {
 
                 width: 250px;
@@ -249,11 +250,20 @@
             // overflow: hidden;
             margin-top: 50px;
 
-            img {
-                width: 300px;
-                justify-self: flex-end;
-                margin-top: 15px;
+            .grid {
+                grid-template-columns: 2fr 1fr;
+
+                p {
+                    text-align: justify;
+                }
+
+                img {
+                    width: 300px;
+                    justify-self: flex-end;
+                    margin-top: 15px;
+                }
             }
+
         }
 
         /*------FEATURES-SUB-HEAD END------*/
@@ -292,6 +302,81 @@
         }
 
         /*------FEATURES-MAIN START------*/
+
+
+        /*******************************DOCS.HTML*******************************/
+        .docs-main {
+            margin-top: 100px;
+
+            .grid {
+                grid-template-columns: 1fr 2fr;
+                align-items: flex-start;
+
+                .card-1 {
+                    height: 600px;
+                }
+
+                .card {
+                    &:nth-child(2) {
+                        background-image: none;
+
+
+                    }
+
+                    h3 {
+                        margin: 20px 0;
+                    }
+
+                    nav {
+                        ul {
+                            li {
+                                font-size: 1.063rem;
+                                padding-bottom: 5px;
+                                margin-bottom: 5px;
+                                border-bottom: 1px #ccc solid;
+
+                                &:hover {
+                                    transition: all 0.4s ease;
+                                    border-bottom: 1px $Secundary solid;
+
+                                }
+
+                                a {
+
+                                    &:hover {
+                                        font-weight: bold;
+                                    }
+                                }
+                            }
+                        }
+                    }
+
+                    p {
+                        text-align: justify;
+                    }
+
+                    .alert {
+                        i {
+                            margin-right: 10px;
+                        }
+                    }
+
+                    .alert-success {
+                        background-color: $Secundary;
+                        color: #fff;
+                    }
+
+                    code,
+                    pre {
+                        background: $Gray;
+                        color: #fff;
+                        padding: 10px;
+                        border-radius: 3px;
+                    }
+                }
+            }
+        }
+
     }
 
     /*----------MAIN STYLING END----------*/

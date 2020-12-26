@@ -24,6 +24,10 @@ a {
   color: #242424;
 }
 
+h1 {
+  font-family: "Lato", sans-serif;
+}
+
 h1,
 h2 {
   line-height: 1.2;
@@ -124,6 +128,10 @@ img {
   text-align: center;
 }
 
+.text-primary {
+  color: #dc143c;
+}
+
 /*------ BACKGROUND ------*/
 .bg-primary {
   background-color: #dc143c;
@@ -133,6 +141,15 @@ img {
 .bg-dark {
   background-color: #242424;
   color: #fff;
+}
+
+/*------ ALERT ------*/
+.alert {
+  background-color: #ccc;
+  padding: 10px 20px;
+  font-weight: bold;
+  margin: 15px 0;
+  border-radius: 5px;
 }
 
 /* ------MARGIN------*/
@@ -287,6 +304,7 @@ main {
   /* --------------------SECTION #3------------------- */
   /*------FEATURES-MAIN START------*/
   /*------FEATURES-MAIN START------*/
+  /*******************************DOCS.HTML*******************************/
 }
 main .showcase {
   height: 450px;
@@ -440,7 +458,8 @@ main .languages .box:before {
   transform: skew(2deg, 2deg);
   z-index: -1;
 }
-main .features-head img {
+main .features-head img,
+main .docs-head img {
   width: 250px;
   justify-self: flex-end;
 }
@@ -450,7 +469,13 @@ main .features-sub-head {
   background-size: contain;
   margin-top: 50px;
 }
-main .features-sub-head img {
+main .features-sub-head .grid {
+  grid-template-columns: 2fr 1fr;
+}
+main .features-sub-head .grid p {
+  text-align: justify;
+}
+main .features-sub-head .grid img {
   width: 300px;
   justify-self: flex-end;
   margin-top: 15px;
@@ -475,6 +500,52 @@ main .features-main .grid .card:hover i {
 }
 main .features-main .grid .card i {
   margin-right: 20px;
+}
+main .docs-main {
+  margin-top: 100px;
+}
+main .docs-main .grid {
+  grid-template-columns: 1fr 2fr;
+  align-items: flex-start;
+}
+main .docs-main .grid .card-1 {
+  height: 600px;
+}
+main .docs-main .grid .card:nth-child(2) {
+  background-image: none;
+}
+main .docs-main .grid .card h3 {
+  margin: 20px 0;
+}
+main .docs-main .grid .card nav ul li {
+  font-size: 1.063rem;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+  border-bottom: 1px #ccc solid;
+}
+main .docs-main .grid .card nav ul li:hover {
+  transition: all 0.4s ease;
+  border-bottom: 1px #c71236 solid;
+}
+main .docs-main .grid .card nav ul li a:hover {
+  font-weight: bold;
+}
+main .docs-main .grid .card p {
+  text-align: justify;
+}
+main .docs-main .grid .card .alert i {
+  margin-right: 10px;
+}
+main .docs-main .grid .card .alert-success {
+  background-color: #c71236;
+  color: #fff;
+}
+main .docs-main .grid .card code,
+main .docs-main .grid .card pre {
+  background: #242424;
+  color: #fff;
+  padding: 10px;
+  border-radius: 3px;
 }
 
 /*----------MAIN STYLING END----------*/
