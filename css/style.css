@@ -320,6 +320,9 @@ main .showcase h1 {
 main .showcase p {
   margin: 1.25rem 0;
 }
+main .showcase .showcase-text {
+  animation: slideInFromLeft 1s ease-in;
+}
 main .showcase .grid {
   grid-template-columns: 55% 45%;
   gap: 1.875rem;
@@ -333,6 +336,7 @@ main .showcase .showcase-form {
   padding: 2.5rem;
   z-index: 100;
   justify-self: flex-end;
+  animation: slideInFromRight 1s ease-in;
 }
 main .showcase .showcase-form .form-control {
   margin: 1.875rem 0;
@@ -363,6 +367,9 @@ main .showcase .showcase::after {
   -webkit-transform: skewY(4deg);
   -moz-transform: skewY(4deg);
   -ms-transform: skewY(4deg);
+}
+main .cli {
+  animation: slideInFromBottom 1s ease-in;
 }
 main .cli .grid {
   margin-top: 150px;
@@ -595,6 +602,11 @@ main .showcase::after {
     -ms-transform: skewY(4deg);
   }
 }
+@media (max-width: 1440px) {
+  .features-sub-head {
+    background-position: left !important;
+  }
+}
 /*------LAPTOP------*/
 @media (max-width: 1024px) {
   main .languages .flex {
@@ -629,10 +641,12 @@ main .showcase::after {
   main .showcase .showcase-text {
     text-align: center;
     margin-top: 40px;
+    animation: slideInFromTop 1s ease-in;
   }
   main .showcase .showcase-form {
     justify-self: center;
     margin: auto;
+    animation: slideInFromBottom 1s ease-in;
   }
   main .cli .grid > *:first-child {
     grid-column: 1;
@@ -684,5 +698,41 @@ main .showcase::after {
   }
 }
 /*----------@MEDIA QUERY STYLING START----------*/
+/*ANIMATE STYLING FILE ANIMATE.SCSS */
+/*----------ANIMATIONS STYLING START----------*/
+/*------ANIMATIONS------*/
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/*----------ANIMATIONS STYLING END----------*/
 
 /*# sourceMappingURL=style.css.map */

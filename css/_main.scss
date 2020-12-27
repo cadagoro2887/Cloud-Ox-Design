@@ -21,7 +21,9 @@
 
             }
 
-
+            .showcase-text {
+                animation: slideInFromLeft 1s ease-in;
+            }
 
             .grid {
                 grid-template-columns: 55% 45%;
@@ -37,6 +39,8 @@
                 padding: 2.5rem;
                 z-index: 100;
                 justify-self: flex-end;
+                animation: slideInFromRight 1s ease-in;
+
 
                 .form-control {
                     margin: 1.875rem 0;
@@ -78,6 +82,8 @@
         /* --------------------SECTION #2------------------- */
         /* ------CLI START ------*/
         .cli {
+            animation: slideInFromBottom 1s ease-in;
+
             .grid {
                 margin-top: 150px;
                 grid-template-columns: repeat(3, 1fr);
